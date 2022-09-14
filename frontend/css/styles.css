@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 
@@ -11,6 +12,21 @@
     display:flex;
 }
 
+.flex-column{
+    flex-direction: column;
+}
+
+input{
+    border-radius:18px;
+    border-color:rgba(215, 215, 205);
+    height:50px;
+    background: transparent;
+    margin:14px;
+    border-style:solid;
+}
+
+
+/* first page images*/
 
 .images{
    justify-content: center;
@@ -22,10 +38,73 @@
 
 .small-logo{
     height:30px;
+    align-self:flex-start;
+    margin-top:2rem;
 }
 
 .big-logo{
     width:45%;
+    height:350px;
 }
 
+
+.header{
+    font-size:70px;
+    font-family: TwitterChirpExtendedHeavy, Verdana, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin-top:2rem;
+}
+
+.parag{
+    font-size:30px;
+    margin-top:2rem;
+    margin-bottom:2rem;
+    font-family: TwitterChirpExtendedHeavy, Verdana, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Button */
+
+.btn{
+    background-color: rgb(29,155,240);
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size:30px;
+    color:white;
+    border: 0 solid black;
+    box-sizing:border-box;
+    font-weight:700;
+    border-radius:60px;
+    width:50%;
+    height:50px;
+    align-self: center;
+    margin:17px;
+}
+
+.log-in{
+    justify-content:space-between;
+}
+
+.log-in > label{
+    font-weight:600;
+    font-size:25px;
+    align-self:flex-start;
+    padding-left:16px;
+}
+
+.log-in-section{
+    padding: 0 14px;
+}
+
+.btn-header{
+    align-self: center;
+}
+
+.btn-white{
+    background-color: white;
+    color: rgb(29,155,240);
+    border-color:rgba(215, 215, 205);
+    border:1px solid;
+}
+
+.on-off{
+    display:none;
+}
 
