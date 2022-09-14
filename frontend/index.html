@@ -14,15 +14,15 @@
             </svg>
         </div>
         <!-- first page  -->
-        <div class="flex flex-column log-in-section on-off">
+        <div class="flex flex-column log-in-section  on-off">
            <img src="./Images/Twitter-logo.svg"  class="small-logo" alt="logo" />
-           <h1 class="header">Happening now</h1>
+           <h1 class="header header-login">Happening now</h1>
            <p class="parag">Join Twitter today.</p>
             <div class="log-in flex flex-column">
                 <label>Email Address </label>
-                <input type="text" />
+                <input class="input-login" type="text" />
                 <label>Password </label>
-                <input type="text" />
+                <input class="input-login" type="text" />
                 <button type="button" class="btn">Log in </button>
                 <h2 class="btn-header">Don't have an account?</h2>
                 <button type="button" class="btn btn-white">Sign In</button>
@@ -30,8 +30,23 @@
         </div>
         <!-- End of first page -->
         <!-- start of sign up page  -->
-        <div class="flex flex-column log-in-section" >
-            <h1 class="header-second-page">Create your account</h1>
+        <div class="flex flex-column log-in-section sign-up" >
+                <h1 class="header header-second-page">Create your account</h1>
+                <input type="text" class="input-signup" placeholder="Name" >
+                <input type="email" class="input-signup" placeholder="Email" name="email" id="email" >
+                <input type="password" class="input-signup" name="password" id="password" placeholder="Password">
+            <div class="flex flex-column date-bio-padding ">
+                <h6 class="header header-date">Date of birth</h6>
+                <p class="parag-date">This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or something else.</p>
+            </div>
+            <input type="date" class="input-signup date" name="date"  id="date" >
+            <div class="flex flex-column date-bio-padding">
+                <label class="bio-label header"> Add a bio </label>
+                <input type="text" id="bio" class="bio" />
+            </div>
         </div>
+
+
+
     </body>
 </html>
