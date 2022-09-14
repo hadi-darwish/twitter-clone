@@ -1,0 +1,31 @@
+/*CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Utilities */
+.flex{
+    display:flex;
+}
+
+
+.images{
+   justify-content: center;
+   align-items: center;
+   background-image:url("../Images/first-page.png");
+   width:50%;
+   height:100vh;
+}
+
+.small-logo{
+    height:30px;
+}
+
+.big-logo{
+    width:45%;
+}
+
+
