@@ -119,8 +119,7 @@ input{
 /* Sign up page */
 
 .header-second-page{
-    font-size: 35px;
-    padding-left:1rem;
+    font-size: 1.5rem;
 }
 
 
@@ -132,7 +131,9 @@ input{
     border-radius:18px;
     height:40px;
     width:48%;
-    padding-left:14px;
+    padding: 1rem;
+    margin: 0 !important;
+    margin-top: 1rem !important;
 }
 
 .sign-up{
@@ -148,22 +149,40 @@ input{
     font-family: inherit;
     font-size:16px;
     color:rgb(29,155,240);
+    margin-top: 1rem;
 }
 
 .date-bio-padding{
-    padding-left:1rem;
+    padding:.5rem;
 }
 
 .bio{
     width:70%;
     padding: 12px 20px;
-    margin: 8px 0;
     box-sizing: border-box;
     border: none;
     border-bottom: 2px solid rgb(107, 158, 233);
+    margin: 0 !important;
 }
 
 .bio-label{
     font-weight:700;
     font-size:14px;
+}
+
+@media only screen and (max-width: 768px) {
+    .images {
+        display: none;
+    }
+    .sign-up{
+        width: 100%;
+        padding: 1rem;
+    }
+    .input-signup{
+        width: 100%;
+    }
+    .bio {
+        width: 100%;
+    }
+
 }
