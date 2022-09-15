@@ -14,7 +14,7 @@
             </svg>
         </div>
         <!-- first page  -->
-        <div class="flex flex-column log-in-section  on-off">
+        <div class="flex flex-column log-in-section">
            <img src="./Images/Twitter-logo.svg"  class="small-logo" alt="logo" />
            <h1 class="header header-login">Happening now</h1>
            <p class="parag">Join Twitter today.</p>
@@ -25,28 +25,35 @@
                 <input class="input-login" type="text" />
                 <button type="button" class="btn">Log in </button>
                 <h2 class="btn-header">Don't have an account?</h2>
-                <button type="button" class="btn btn-white">Sign In</button>
+                <button type="button" class="btn btn-white click-me"  id="signup" >Sign Up</button>
             </div>
         </div>
-        <!-- End of first page -->
-        <!-- start of sign up page  -->
-        <div class="flex flex-column sign-up" >
-                <h1 class="header header-second-page">Create your account</h1>
-                <input type="text" class="input-signup" placeholder="Name" >
-                <input type="email" class="input-signup" placeholder="Email" name="email" id="email" >
-                <input type="password" class="input-signup" name="password" id="password" placeholder="Password">
-            <div class="flex flex-column date-bio-padding ">
-                <h6 class="header header-date">Date of birth</h6>
-                <p class="parag-date">This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or something else.</p>
-            </div>
-            <input type="date" class="input-signup date" name="date"  id="date" >
-            <div class="flex flex-column date-bio-padding">
-                <label class="bio-label header"> Add a bio </label>
-                <input type="text" id="bio" class="bio" />
-            </div>
-        </div>
+                <div class="popup" id="popup" >
+                    <!-- start of sign up page  -->
+                    <div class="sign-up " >
+                        <div class="flex flex-column">
+                            <h1 class="header header-second-page">Create your account</h1>
+                            <input type="text" class="input-signup" placeholder="Name" >
+                            <input type="email" class="input-signup" placeholder="Email" name="email" id="email" >
+                            <input type="password" class="input-signup" name="password" id="password" placeholder="Password">
+                        </div>
+                        <div class="flex flex-column date-bio-padding ">
+                            <h6 class="header header-date">Date of birth</h6>
+                            <p class="parag-date">This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or something else.</p>
+                            <input type="date" class="input-signup date" name="date"  id="date" >
+                        </div>
+                        <div class="flex flex-column date-bio-padding">
+                            <label class="bio-label header"> Add a bio </label>
+                            <input type="text" id="bio" class="bio" />
+                        </div>
+                        <button type="button" id="closePop" >close</button>
+                    </div>
+                   <!-- End of signup page -->
+                </div>
 
-
-
+  
+            <!-- end of pop up -->
+    <!-- End of first page -->
+    <script src="javascript/scripts.js" ></script>
     </body>
 </html>
