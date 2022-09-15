@@ -139,17 +139,17 @@ input{
 /* Sign up page */
 
 .popup{
-    width: 400px;
-    background: white;
-    border-radius: 6px;
+    background: rgb(255, 251, 251);
+    border-radius:10px;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translate(-50%,-50%) scale(0.1);
-    text-align: center;
     padding: 0 30px 30px;
     visibility: hidden;
     transition: transform 0.4s, top o.4s;
+    display:flex;
+    justify-content:center;
 }
 
 .open-popup{
@@ -157,14 +157,6 @@ input{
     top:50%;
     transform: translate(-50%,-50%) scale(1);
 }
-
-
-
-
-
-
-
-
 
 .header-second-page{
     font-size: 1.5rem;
@@ -177,16 +169,20 @@ input{
 
 .input-signup{
     border-radius:18px;
-    height:40px;
-    width:48%;
+    /* width:16rem; */
     padding: 1rem;
     margin: 0 !important;
     margin-top: 1rem !important;
 }
 
 .sign-up{
-    width:50%;
-    padding: 2rem;
+    padding: 0 5rem ;
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+
+.signup-head{
+     justify-content: space-around;
 }
 
 .date::placeholder{
