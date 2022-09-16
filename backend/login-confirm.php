@@ -13,3 +13,30 @@ $queryText = "SELECT email, password FROM users WHERE email = ?";
 $query = $mysqli->prepare($queryText);
 $query->bind_param("s", $email);
 $query->execute();
+
+
+if (!$query) {
+    echo 'Could not run query: ' . mysqli_error($mysqli);
+    exit;
+}
+$array = $query->get_result();
+$rowcount = mysqli_num_rows($array);
+
+if ($rowcount == 1) {
+    $row = $array->fetch_row();
+    //comparing password with the one in the database
+    if ($row[1] == $password) {
+        $confirm =  True;
+    } else {
+        $confirm = FALSE;
+    }
+} else {
+    //email not found
+    $confirm = "not found";
+}
+
+$results = [
+    "email" => $email,
+    "confirmation" => $confirm,
+];
+echo json_encode($results);
