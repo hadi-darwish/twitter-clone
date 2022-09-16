@@ -73,17 +73,19 @@ input{
 .btn{
     background-color: rgb(29,155,240);
     font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size:30px;
+    font-size:25px;
     color:white;
     border: 0 solid black;
     box-sizing:border-box;
     font-weight:700;
     border-radius:60px;
-    width:50%;
-    height:50px;
+    width:35%;
+    height:20%;
     align-self: center;
     margin:17px;
 }
+
+
 
 .log-in{
     justify-content:space-between;
@@ -155,6 +157,8 @@ input{
 .open-popup{
     visibility: visible;
     top:50%;
+    overflow-x: hidden;
+    height: 85%;
     transform: translate(-50%,-50%) scale(1);
 }
 
@@ -182,7 +186,12 @@ input{
 }
 
 .signup-head{
-     justify-content: space-around;
+     justify-content:space-between;
+}
+
+.close-icon{
+    align-self:flex-start;
+    padding-top:1rem;
 }
 
 .date::placeholder{
@@ -213,6 +222,49 @@ input{
     font-weight:700;
     font-size:14px;
 }
+
+.btn-next{
+    align-self: center;
+}
+
+/* Home page */
+ 
+.block{
+    display:grid;
+    grid-template-columns: 275px auto 350px;
+    margin : 0 auto;  
+}
+
+.block-right-sidebar-container{
+    padding: 2rem;
+}
+
+
+.block-left-sidebar-container{
+    padding: 2rem;
+}
+
+
+
+
+.block-right-sidebar{
+    position:fixed;
+}
+
+.block-right-sidebar{
+    position:fixed;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Query */
 
 @media only screen and (max-width: 768px) {
     .images {

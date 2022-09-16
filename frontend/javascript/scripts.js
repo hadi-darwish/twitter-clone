@@ -1,6 +1,7 @@
-let popup = document.getElementById("popup");
-let signup = document.getElementById("signup");
-let close = document.getElementById("closePop");
+const popup = document.getElementById("popup");
+const signup = document.getElementById("signup");
+const close = document.getElementById("closePop");
+const next = document.getElementById("next-btn");
 
 
 signup.addEventListener("click", openPopup)
@@ -15,5 +16,4 @@ close.addEventListener("click", closePopup)
 function closePopup(){
     popup.classList.remove("open-popup");
 }
-
 
