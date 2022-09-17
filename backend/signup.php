@@ -90,3 +90,16 @@ while ($c = $array3->fetch_assoc()) {
     $response3[] = $c;
 }
 //end
+
+//start logic3
+//here we convert the base64 string to normal image form 
+//and saving it as profile image
+$fullImage = base64_decode($prof_image);
+$size = getImageSizeFromString($fullImage);
+if (empty($size['mime']) || strpos($size['mime'], 'image/') !== 0) {
+    die('Base64 value is not a valid image');
+}
+$ext = substr($size['mime'], 6);
+$img_file = "C:/xampp/htdocs/twitter-apis/images/profile/prof_{$response3[0]["id"]}.{$ext}";
+file_put_contents($img_file, $fullImage);
+//end logic3
