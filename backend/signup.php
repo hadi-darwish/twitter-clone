@@ -41,3 +41,29 @@ foreach ($response as $b) {
     }
 }
 //End Logic 1
+
+//Start Logic 2
+//here we are checking if the email used before or not
+//and if it is used it will exit the code with email used response
+$queryText2 = "SELECT email from users";
+$query2 = $mysqli->prepare($queryText2);
+$query2->execute();
+$array2 = $query2->get_result();
+
+$response2 = [];
+$emails = [];
+
+while ($c = $array2->fetch_assoc()) {
+    $response2[] = $c;
+}
+
+foreach ($response2 as $d) {
+    $emails[] = $d;
+    foreach ($d as $t) {
+        if ($email == $t) {
+            echo json_encode("email used");
+            exit;
+        }
+    }
+}
+//End Logic 2
