@@ -99,13 +99,13 @@ a{
 
 
 /* Button */
-
+/* 
 .btn-twt{
     font-size: 30px;
     padding: 10px;
     margin: 17px;
     width: 200px;
-}
+} */
 
 .btn {
   background-color: rgb(29, 155, 240);
@@ -139,13 +139,6 @@ a{
 
 
 /* log in  */
-
-
-.side-bar-items:hover {
-  background-color: rgb(130, 194, 255);
-  color: white;
-  border-radius: 60px;
-}
 
 .log-in {
   justify-content: space-between;
@@ -258,6 +251,15 @@ a{
   margin: 0 auto;
 }
 
+.block-left-sidebar{
+    padding-left:60px;
+}
+
+
+.text{
+   font-size:20px;
+}
+
 .block-container {
   padding: 2rem;
 }
@@ -267,8 +269,8 @@ a{
 }
 
 .block-main {
-  padding:100px;
-  padding-top: 2px;
+  padding:77px;
+  padding-top: 0 ;
 }
 
 .tweet-head{
@@ -330,8 +332,22 @@ a{
 /* Icons */
 
 .side-bar-icons {
-  font-size: 70px;
+  font-size:30px;
   margin:9px;
+}
+
+
+.side-bar-items:hover {
+    cursor: pointer;
+    background-color:rgb(183, 188, 192);
+    color: black;
+    padding-right:20px;
+    border-radius:60px;
+}
+
+
+.icon-padding{
+    padding-right:30px;
 }
 
 
