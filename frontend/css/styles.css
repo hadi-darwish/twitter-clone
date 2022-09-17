@@ -15,6 +15,23 @@
     flex-direction: column;
 }
 
+.flex-row{
+    flex-direction:row
+}
+
+
+.flex-center{
+    justify-content:center ;
+}
+
+.flex-align{
+    align-items:center;
+}
+
+.grid{
+    display:grid;
+    gap:45px;
+}
 
 input{
     border-color:rgba(215, 215, 205);
@@ -23,6 +40,9 @@ input{
     border-style:solid;
 }
 
+.color{
+    background-color: blue;
+}
 
 /* first page images*/
 
@@ -73,23 +93,22 @@ input{
 .btn{
     background-color: rgb(29,155,240);
     font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-size:25px;
+    font-size:30px;
     color:white;
-    border: 0 solid black;
-    box-sizing:border-box;
     font-weight:700;
-    border-radius:60px;
-    width:35%;
-    height:20%;
-    align-self: center;
+    border: 0 solid black;
+    border-radius:30px;
+    padding:10px;
     margin:17px;
+    align-self: center;
+    Width:200px;
 }
-
 
 
 .log-in{
     justify-content:space-between;
 }
+
 
 .log-in > label{
     font-weight:600;
@@ -129,6 +148,8 @@ input{
   line-height:50px;
   cursor:pointer;
 }
+
+
 #click
 {
   display:none;
@@ -231,36 +252,42 @@ input{
  
 .block{
     display:grid;
-    grid-template-columns: 275px auto 350px;
+    grid-template-columns: 275px  auto 350px;
     margin : 0 auto;  
 }
 
-.block-right-sidebar-container{
+.block-container{
     padding: 2rem;
 }
 
-
-.block-left-sidebar-container{
-    padding: 2rem;
-}
-
-
-
-
-.block-right-sidebar{
+.position-fixed{
     position:fixed;
 }
 
+.block-left-sidebar{
+  
+
+}
+
+.block-main{
+    padding:50px;
+}
+
 .block-right-sidebar{
-    position:fixed;
+    
+}
+
+.logo-center{
+    justify-self: center;
 }
 
 
+/* Icons */
 
-
-
-
-
+.side-bar-icons{
+   font-size:70px;
+   margin:9px;
+}
 
 
 
@@ -277,8 +304,4 @@ input{
     .input-signup{
         width: 100%;
     }
-    .bio {
-        width: 100%;
-    }
-
 }
