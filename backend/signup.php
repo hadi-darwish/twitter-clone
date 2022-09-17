@@ -103,3 +103,16 @@ $ext = substr($size['mime'], 6);
 $img_file = "C:/xampp/htdocs/twitter-apis/images/profile/prof_{$response3[0]["id"]}.{$ext}";
 file_put_contents($img_file, $fullImage);
 //end logic3
+
+//start logic4
+//here we convert the base64 string to normal image form 
+//and saving it as banner image
+$fullImage2 = base64_decode($banner_image);
+$size2 = getImageSizeFromString($fullImage2);
+if (empty($size2['mime']) || strpos($size2['mime'], 'image/') !== 0) {
+    die('Base64 value is not a valid image');
+}
+$ext = substr($size['mime'], 6);
+$img_file2 = "C:/xampp/htdocs/twitter-apis/images/banner/banner_{$response3[0]["id"]}.{$ext}";
+file_put_contents($img_file2, $fullImage2);
+//end logic4
