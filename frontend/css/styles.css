@@ -46,6 +46,12 @@ input {
   background-color: blue;
 }
 
+
+a{
+    text-decoration: none;
+    color: white;
+}
+  
 /* first page images*/
 
 .input-login {
@@ -90,25 +96,49 @@ input {
     BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
+
+
 /* Button */
+
+.btn-twt{
+    font-size: 30px;
+    padding: 10px;
+    margin: 17px;
+    width: 200px;
+}
 
 .btn {
   background-color: rgb(29, 155, 240);
   font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  font-size: 30px;
   color: white;
   font-weight: 700;
   border: 0 solid black;
   border-radius: 30px;
-  padding: 10px;
-  margin: 17px;
   align-self: center;
-  width: 200px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  padding: 16px 32px;
+  text-align: center;
 }
-a{
-  text-decoration: none;
-  color: white;
+
+
+.btn-header {
+    align-self: center;
 }
+  
+.btn-white {
+    background-color: white;
+    text-align: center;
+    color: rgb(29, 155, 240);
+    border-color: rgba(215, 215, 205);
+    border: 1px solid;
+}
+
+
+/* log in  */
 
 
 .side-bar-items:hover {
@@ -131,19 +161,6 @@ a{
 .log-in-section {
   padding: 0 14px;
 }
-
-.btn-header {
-  align-self: center;
-}
-
-.btn-white {
-  background-color: white;
-  text-align: center;
-  color: rgb(29, 155, 240);
-  border-color: rgba(215, 215, 205);
-  border: 1px solid;
-}
-
 
 /* btn sign up  */
 
@@ -237,7 +254,7 @@ a{
 
 .block {
   display: grid;
-  grid-template-columns: 275px auto 350px;
+  grid-template-columns: 300px 900px 300px; 
   margin: 0 auto;
 }
 
@@ -250,24 +267,27 @@ a{
 }
 
 .block-main {
-  padding: 50px;
-  padding-top: 5px;
-  background-color: chartreuse;
+  padding:100px;
+  padding-top: 2px;
 }
 
 .tweet-head{
-    border:solid;
+    border: 2px solid #e7e7e7;
 }
 
 .user-img{
     height:45px;
     width:45px;
+    border-radius: 100%;
 }
 
 .textarea{
-    font-size:30px;
+    font-size:20px;
     width:80%;
-    align-self: center;
+    align-self:center;
+    border-style: none;
+    resize: none;
+    height:50px;
 }
 
 
@@ -278,20 +298,47 @@ a{
 .font-home {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
 }
+
+.img-padding{
+    padding-left:20px;
+    padding-right: 20px;
+}
+
+
+.home-icon-bar{
+    margin-bottom: 20px;
+    padding-top:20px;
+}
+
 
 .Home-header {
   font-size: 20px;
   font-weight: 700;
+  padding-left:20px;
 }
 
+.tweet-bar{
+    justify-content:space-between;
+}
+
+.tweet-btn-homebar{
+  margin-bottom:20px;
+}
 
 /* Icons */
 
 .side-bar-icons {
   font-size: 70px;
-  margin: 9px;
+  margin:9px;
 }
+
+
+
+
+
+
 
 /* Media Query */
 

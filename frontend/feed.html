@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Home / Twitter</title>
 </head>
-<body class="font-home">
+<body class="font-home flex flex-center flex-align">
     <!-- Creating the whole block page that consist of 3 columns -->
     <div class="block">
         <div class="block-container">
@@ -28,18 +28,23 @@
         <div class="block-main">
             <!-- Home header first block -->
             <section class="flex flex-column flex-space tweet-head">
-                <div class="flex flex-row flex-space">
+                <div class="flex flex-row flex-space home-icon-bar">
                     <h1 class="Home-header">Home</h1>
                     <i class="material-icons">flutter_dash</i>
                 </div>
-                <div class="flex flex-column ">
-                    <div><img src="./Images/person-logo.png" alt="user" class="user-img" /></div>
+                <div class="flex flex-row space">
+                    <div class="flex-align flex-center img-padding">
+                        <img src="./Images/person-logo.png" alt="user" class="user-img" />
+                    </div>
+                    <div class="flex-column">
                     <textarea rows="4" cols="50" placeholder="What's happening?" class="textarea"></textarea>
+                    <div class="flex  flex-align flex-center tweet-bar"> 
+                        <i class="material-icons"> image </i>
+                        <button type="button" class="btn tweet-btn-homebar" >Tweet</button>
+                    </div>
+                    </div>
                 </div>
             </section>
-            <div>
-
-            </div>
             
 
         </div>
