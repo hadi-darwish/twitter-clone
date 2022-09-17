@@ -75,3 +75,18 @@ $query1->bind_param("sssss", $username, $name, $email, $password, $dob);
 $query1->execute();
 $response1["success"] = true;
 echo json_encode($response1);
+
+//start
+//getting the id to name image files
+$queryText3 = "SELECT id FROM users WHERE email = ?";
+$query3 = $mysqli->prepare($queryText3);
+$query3->bind_param("s", $email);
+$query3->execute();
+$array3 = $query3->get_result();
+
+
+$response3 = [];
+while ($c = $array3->fetch_assoc()) {
+    $response3[] = $c;
+}
+//end
