@@ -116,3 +116,11 @@ $ext = substr($size['mime'], 6);
 $img_file2 = "C:/xampp/htdocs/twitter-apis/images/banner/banner_{$response3[0]["id"]}.{$ext}";
 file_put_contents($img_file2, $fullImage2);
 //end logic4
+
+//updating data of user by adding both banner and profile images urls to database
+$queryText4 = "UPDATE users set profile_image =?, banner_image =? where email = ?";
+$query4 = $mysqli->prepare($queryText4);
+$query4->bind_param("sss", $img_file, $img_file2, $email);
+$query4->execute();
+$response4["success"] = true;
+echo json_encode($response4);
