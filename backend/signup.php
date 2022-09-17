@@ -67,3 +67,11 @@ foreach ($response2 as $d) {
     }
 }
 //End Logic 2
+
+//adding data to database
+$queryText1 = "INSERT  INTO users (user_name,name,email, password,date_of_birth) VALUE (?,?,?,?,?)";
+$query1 = $mysqli->prepare($queryText1);
+$query1->bind_param("sssss", $username, $name, $email, $password, $dob);
+$query1->execute();
+$response1["success"] = true;
+echo json_encode($response1);
