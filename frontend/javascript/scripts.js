@@ -1,7 +1,7 @@
 const popup = document.getElementById("popup");
 const signup = document.getElementById("signup");
 const close = document.getElementById("closePop");
-const edit_profile = document.getElementById("edit_profile");
+
 
 signup.addEventListener("click", openPopup)
 function openPopup(){
