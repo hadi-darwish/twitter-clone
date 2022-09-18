@@ -10,7 +10,7 @@ include("connection.php");
 $user_id = $_POST["user_id"];
 $tweet_id = $_POST["tweet_id"];
 
-// adding like to database
+// deleting like from database
 $queryText1 = "DELETE FROM likes where user_id=? and tweet_id=?";
 $query1 = $mysqli->prepare($queryText1);
 $query1->bind_param("ss", $user_id, $tweet_id);
