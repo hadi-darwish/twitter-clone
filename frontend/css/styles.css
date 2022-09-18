@@ -266,6 +266,13 @@ a{
   margin-top: 1rem !important;
 }
 
+.arrow-icon{
+  color:black;
+  padding-left:14px;
+  padding-right:14px;
+}
+
+
 .sign-up {
   padding: 0 5rem;
   margin-top: 2rem;
