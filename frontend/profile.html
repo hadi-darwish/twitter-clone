@@ -17,11 +17,11 @@
              <img src="./Images/Twitter-logo.svg"  class="small-logo logo-center" alt="logo" />
              <div class="flex flex-row flex-center flex-align side-bar-items">
                 <i class="material-icons side-bar-icons">home</i>
-                <h1 class="text">Home</h1>
+                <a href="feed.html" ><h1 class="text-h1">Home</h1></a>
              </div>
              <div class="flex flex-row flex-center flex-align side-bar-items">
                 <i class=" material-icons side-bar-icons">person</i>
-                <h1 class="text">Profile</h1>
+                <a href="profile.html"><h1 class="text-h1">Profile</h1></a>
              </div>
              <button type="button" class="btn tweet-btn-sidebar" >Tweet</button>
             </div>
@@ -40,7 +40,12 @@
            <div class="flex flex-row flex-space border-blocks">
                  <div class="grid gap padding-blocks">
                     <div class="bio gap">
-                        <img src="./Images/person-logo.png" alt="user" class="user-img big-user-profile mt-1" />
+                        <div class="image-upload">
+                            <label for="file-input">
+                                <img src="./Images/person-logo.png" alt="user" class="user-img big-user-profile mt-1" />
+                            </label>
+                            <input id="file-input" type="file" accept="image/jpeg , image/png ,image/jpg " />
+                        </div>
                         <p class="username-pg mt-1" id="username-profile-header">Username</p>
                         <div class="flex flex-row flex-align mt-1">
                             <i class=" material-icons side-bar-icons calender">calendar_month</i>
@@ -58,11 +63,11 @@
          <div class="popup popup-edit-profile padding-bg " id="popup">
             <div class="flex flex-column fullwidth ">
                 <div class="container flex-row fullwidth center-items flex-space padding-1">
-                    <img
-                    src="./Images/close.png"
-                    id="closePop"
-                    alt="icon"
-                    />
+                            <img
+                            src="./Images/close.png"
+                            id="closePop"
+                            alt="icon"
+                            />   
                     <h1>Edit Profile</h1>
                     <button type="button" class="save-btn">Save</button>
                 </div>
@@ -71,7 +76,12 @@
                 </div>
                 
                 <div class="grid grid-row gap-content padding-1 js-items-center">
-                    <img src="./Images/person-logo.png" alt="user" class="user-img  user-profile" />
+                    <div class="image-upload">
+                        <label for="file-input">
+                            <img src="./Images/person-logo.png" alt="user" class="user-img  user-profile" />
+                        </label>
+                        <input id="file-input" type="file" accept="image/jpeg , image/png ,image/jpg " />
+                    </div>
                     <input type=" text" class="name input-login" placeholder="Name">
                     <input type="text" class="bio input-login" placeholder="Bio">
                     <input type="text" class="password input-login" placeholder="Password">
@@ -79,9 +89,6 @@
                 </div>
             </div>
          </div>
-      
-
-
         <div class="block-container">
             <div class="block-right-sidebar position-fixed" >
                <div class="search-bar flex flex-align flex-center ">
@@ -90,16 +97,6 @@
                </div>
             </div>
         </div>
-
-
-
- 
-
-
-   
-
-
-
         <script src="javascript/profile.js"></script>
 </body>
 </html>

@@ -399,6 +399,15 @@ a{
     border-radius: 100%;
 }
 
+.image-upload>input{
+  display: none;
+}
+
+.text-h1{
+  color:black;
+  font-size: 20px;
+}
+
 .textarea{
     font-size:20px;
     width:80%;
