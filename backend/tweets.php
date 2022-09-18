@@ -22,3 +22,14 @@ $query1->bind_param("ss", $tweet_text, $user_id);
 $query1->execute();
 $response1["success"] = true;
 echo json_encode($response1);
+
+//selecting this tweet id
+$queryText = " SELECT MAX( id ) FROM tweets;";
+$query = $mysqli->prepare($queryText);
+$query->execute();
+$array = $query->get_result();
+$response = [];
+while ($c = $array->fetch_assoc()) {
+    $response[] = $c;
+}
+$tweet_id = ($response[0]["MAX( id )"]);
