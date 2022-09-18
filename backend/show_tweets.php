@@ -10,8 +10,8 @@ $user_id = $_POST["user_id"];
 
 
 //show all tweets of followings of client
-$queryText = "(SELECT s.* FROM tweets s left join follows j on s.users_id = j.followed and  j.follower = ?
-where s.users_id not in (select blocked from blocks where blocker = ?)) ";
+$queryText = 'SELECT s.* FROM tweets s right join follows j on s.users_id = j.followed and  j.follower = ?
+where s.users_id not in (select blocked from blocks where blocker = ?) and s.id != "" ';
 $query = $mysqli->prepare($queryText);
 $query->bind_param("ss", $user_id, $user_id);
 $query->execute();
