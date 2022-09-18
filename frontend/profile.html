@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Profile</title>
+</head>
+<body class="font-home flex flex-center flex-align">
+    <!-- Creating the whole block page that consist of 3 columns -->
+    <div class="block">
+        <div class="block-container">
+            <!-- first left side block -->
+            <div class="block-left-sidebar position-fixed grid" >
+             <img src="./Images/Twitter-logo.svg"  class="small-logo logo-center" alt="logo" />
+             <div class="flex flex-row flex-center flex-align side-bar-items">
+                <i class="material-icons side-bar-icons">home</i>
+                <a href="feed.html" ><h1 class="text-h1">Home</h1></a>
+             </div>
+             <div class="flex flex-row flex-center flex-align side-bar-items">
+                <i class=" material-icons side-bar-icons">person</i>
+                <a href="profile.html"><h1 class="text-h1">Profile</h1></a>
+             </div>
+             <button type="button" class="btn tweet-btn-sidebar" >Tweet</button>
+            </div>
+        </div>
+        <!-- Second main block-->
+        <div class="block-main ">
+           <div class="flex flex-row username-main-padding border-blocks">
+                <a href="feed.html"  class="arrow-icon" ><i class="material-icons">arrow_back</i></a>
+                <div class="flex flex-column">
+                    <p class="username-pg" id="username-profile-header">Username</p>
+                    <p>Tweets</p>
+                </div>
+           </div>
+           <div class="bg-color-profile">
+           </div>
+           <div class="flex flex-row flex-space border-blocks">
+                 <div class="grid gap padding-blocks">
+                    <div class="bio gap">
+                        <div class="image-upload">
+                            <label for="file-input">
+                                <img src="./Images/person-logo.png" alt="user" class="user-img big-user-profile mt-1" />
+                            </label>
+                            <input id="file-input" type="file" accept="image/jpeg , image/png ,image/jpg " />
+                        </div>
+                        <p class="username-pg mt-1" id="username-profile-header">Username</p>
+                        <div class="flex flex-row flex-align mt-1">
+                            <i class=" material-icons side-bar-icons calender">calendar_month</i>
+                            <p> Joined September 2022 </p>
+                        </div>
+                        <div class="flex flex-row mt-1">
+                            <p> 0 Following </p>
+                            <p class="followers-padding"> 0 Followers </p>
+                        </div>
+                    </div>
+                </div>
+            <button type="button" class="edit-profile-btn click-me click-edit-btn" id="edit_profile">Edit Profile</button>
+           </div>
+         </div>
+         <div class="popup popup-edit-profile padding-bg " id="popup">
+            <div class="flex flex-column fullwidth ">
+                <div class="container flex-row fullwidth center-items flex-space padding-1">
+                            <img
+                            src="./Images/close.png"
+                            id="closePop"
+                            alt="icon"
+                            />   
+                    <h1>Edit Profile</h1>
+                    <button type="button" class="save-btn">Save</button>
+                </div>
+                <div class="container bg-color center-items flex-center height-bg padding-5">
+                        <div class="image-upload">
+                            <label for="file-input">
+                                <button type="button" class="camera-btn"><i class=" material-icons side-bar-icons">photo_camera</i></button>
+                            </label>
+                            <input id="file-input" type="file" accept="image/jpeg , image/png ,image/jpg " />
+                        </div>
+                </div>
+                
+                <div class="grid grid-row gap-content padding-1 js-items-center">
+                    <div class="image-upload">
+                        <label for="file-input">
+                            <img src="./Images/person-logo.png" alt="user" class="user-img  user-profile" />
+                        </label>
+                        <input id="file-input" type="file" accept="image/jpeg , image/png ,image/jpg " />
+                    </div>
+                    <input type=" text" class="name input-login" placeholder="Name">
+                    <input type="text" class="bio input-login" placeholder="Bio">
+                    <input type="text" class="password input-login" placeholder="Password">
+                    <input type="text" class="checkpassword input-login" placeholder="Check Password">
+                </div>
+            </div>
+         </div>
+        <div class="block-container">
+            <div class="block-right-sidebar position-fixed" >
+               <div class="search-bar flex flex-align flex-center ">
+                   <i class="material-icons icon-padding">search</i>
+                   <input type="text" placeholder="Search Twitter"  class="search-input" />
+               </div>
+            </div>
+        </div>
+        <script src="javascript/profile.js"></script>
+</body>
+</html>
