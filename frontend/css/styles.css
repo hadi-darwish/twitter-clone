@@ -445,6 +445,10 @@ a{
   padding-right:8px;
 }
 
+.center-icon{
+  position:relative;
+  text-align:center;
+}
 
 /* Third and last block */
 
@@ -493,6 +497,13 @@ a{
   height:200px;
 }
 
+.user-profile{
+  top: -16%;
+  width:150px;
+  height:160px;
+  position: relative;
+}
+
 .big-user-profile{
   width:150px;
   height:160px;
@@ -517,7 +528,7 @@ a{
 }
 
 .popup-edit-profile{
-    background-color:rgb(163, 150, 150);
+    background-color:white;
     width:500px;
     height:560px;
     padding-top: 1rem;
