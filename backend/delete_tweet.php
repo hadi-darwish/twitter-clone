@@ -36,3 +36,10 @@ $query2->bind_param("s", $tweet_id);
 $query2->execute();
 $response2["success"] = true;
 echo json_encode($response2);
+// deleting tweet from database
+$queryText3 = "DELETE FROM tweets where id=?";
+$query3 = $mysqli->prepare($queryText3);
+$query3->bind_param("s", $tweet_id);
+$query3->execute();
+$response3["success"] = true;
+echo json_encode($response3);
