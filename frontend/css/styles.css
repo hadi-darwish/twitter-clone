@@ -367,7 +367,6 @@ a{
     width:77%;
     height:40px;
     background-color:rgb(239, 243, 244);
-    /* background-color: rgba(122, 124, 122, 0.2); */
     border-radius: 60px;
     padding: 10px 20px;
 
@@ -395,6 +394,19 @@ a{
 .block-right-sidebar{
     margin-right:60px;
 }
+
+
+/* Profile page */
+.username-pg{
+    font-size:20px;
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.username-main-padding{
+    padding-left:40px;
+}
+
 
 
 /* Media Query */
