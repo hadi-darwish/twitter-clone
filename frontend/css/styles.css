@@ -10,6 +10,18 @@
   width: 100%;
 }
 
+.padding-1 {
+  padding: 1rem;
+}
+
+.padding-5 {
+  padding: 5rem;
+}
+
+.js-items-center{
+  justify-items: center;
+}
+
 .flex {
   display: flex;
 }
@@ -86,7 +98,7 @@ a{
 .input-login {
   border-radius: 18px;
   height:45px;
-  width:300px;
+  width:80%;
   padding-left:14px;
   font-size:20px;
 }
@@ -227,6 +239,8 @@ a{
   transition: transform 0.4s, top o.4s;
   display: flex;
   justify-content: center;
+  box-shadow: 20px 20px 50px 15px grey;
+
 }
 
 .open-popup {
@@ -262,6 +276,9 @@ a{
   justify-content: space-between;
 }
 
+.mt-1{
+  margin-top: 1rem;
+}
 .close-icon {
   align-self: flex-start;
   padding-top: 1rem;
@@ -497,18 +514,38 @@ a{
   height:200px;
 }
 
+.container{
+  width: 100%;
+  display: flex;
+}
+
 .user-profile{
-  top: -16%;
-  width:150px;
-  height:160px;
+  top: -50%;
+  width:5rem;
+  height:5rem;
+  position: relative;
+}
+
+.bg-color{
+  background-color: rgb(207,217,222);
+}
+
+.height-bg{
+  height:50%;
+}
+
+.gap-content{
+  gap:5px;
+}
+
+.bio{
+  top:-30%;
   position: relative;
 }
 
 .big-user-profile{
   width:150px;
   height:160px;
-  top:-50%;
-  position: relative;
 }
 
 .padding-blocks{

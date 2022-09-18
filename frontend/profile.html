@@ -39,15 +39,17 @@
            </div>
            <div class="flex flex-row flex-space border-blocks">
                  <div class="grid gap padding-blocks">
-                    <img src="./Images/person-logo.png" alt="user" class="user-img big-user-profile" />
-                    <p class="username-pg" id="username-profile-header">Username</p>
-                    <div class="flex flex-row flex-align ">
-                        <i class=" material-icons side-bar-icons calender">calendar_month</i>
-                        <p> Joined September 2022 </p>
-                    </div>
-                    <div class="flex flex-row">
-                        <p> 0 Following </p>
-                        <p class="followers-padding"> 0 Followers </p>
+                    <div class="bio gap">
+                        <img src="./Images/person-logo.png" alt="user" class="user-img big-user-profile mt-1" />
+                        <p class="username-pg mt-1" id="username-profile-header">Username</p>
+                        <div class="flex flex-row flex-align mt-1">
+                            <i class=" material-icons side-bar-icons calender">calendar_month</i>
+                            <p> Joined September 2022 </p>
+                        </div>
+                        <div class="flex flex-row mt-1">
+                            <p> 0 Following </p>
+                            <p class="followers-padding"> 0 Followers </p>
+                        </div>
                     </div>
                 </div>
             <button type="button" class="edit-profile-btn click-me click-edit-btn" id="edit_profile">Edit Profile</button>
@@ -55,7 +57,7 @@
          </div>
          <div class="popup popup-edit-profile padding-bg " id="popup">
             <div class="flex flex-column fullwidth ">
-                <div class="flex flex-row fullwidth center-items flex-space ">
+                <div class="container flex-row fullwidth center-items flex-space padding-1">
                     <img
                     src="./Images/close.png"
                     id="closePop"
@@ -64,10 +66,17 @@
                     <h1>Edit Profile</h1>
                     <button type="button" class="save-btn">Save</button>
                 </div>
-                <div class="bg-color-profile">
+                <div class="container bg-color center-items flex-center height-bg padding-5">
                         <button type="button" class="camera-btn"><i class=" material-icons side-bar-icons">photo_camera</i></button>
                 </div>
-                <img src="./Images/person-logo.png" alt="user" class="user-img  user-profile" />
+                
+                <div class="grid grid-row gap-content padding-1 js-items-center">
+                    <img src="./Images/person-logo.png" alt="user" class="user-img  user-profile" />
+                    <input type=" text" class="name input-login" placeholder="Name">
+                    <input type="text" class="bio input-login" placeholder="Bio">
+                    <input type="text" class="password input-login" placeholder="Password">
+                    <input type="text" class="checkpassword input-login" placeholder="Check Password">
+                </div>
             </div>
          </div>
       
