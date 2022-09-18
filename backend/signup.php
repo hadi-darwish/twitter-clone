@@ -94,33 +94,43 @@ while ($c = $array3->fetch_assoc()) {
 //start logic3
 //here we convert the base64 string to normal image form 
 //and saving it as profile image
-$fullImage = base64_decode($prof_image);
-$size = getImageSizeFromString($fullImage);
-if (empty($size['mime']) || strpos($size['mime'], 'image/') !== 0) {
-    die('Base64 value is not a valid image');
+if ($prof_image != "") {
+    $fullImage = base64_decode($prof_image);
+    $size = getImageSizeFromString($fullImage);
+    if (empty($size['mime']) || strpos($size['mime'], 'image/') !== 0) {
+        die('Base64 value is not a valid image');
+    }
+    $ext = substr($size['mime'], 6);
+    $img_file = "C:/xampp/htdocs/twitter-apis/images/profile/prof_{$response3[0]["id"]}.{$ext}";
+    file_put_contents($img_file, $fullImage);
+    //updating data of user by adding both profile image url to database
+    $queryText5 = "UPDATE users set  profile_image =? where email = ?";
+    $query5 = $mysqli->prepare($queryText5);
+    $query5->bind_param("ss",  $img_file, $email);
+    $query5->execute();
+    $response5["success"] = true;
+    echo json_encode($response5);
 }
-$ext = substr($size['mime'], 6);
-$img_file = "C:/xampp/htdocs/twitter-apis/images/profile/prof_{$response3[0]["id"]}.{$ext}";
-file_put_contents($img_file, $fullImage);
 //end logic3
 
 //start logic4
 //here we convert the base64 string to normal image form 
 //and saving it as banner image
-$fullImage2 = base64_decode($banner_image);
-$size2 = getImageSizeFromString($fullImage2);
-if (empty($size2['mime']) || strpos($size2['mime'], 'image/') !== 0) {
-    die('Base64 value is not a valid image');
+if ($banner_image != "") {
+    $fullImage2 = base64_decode($banner_image);
+    $size2 = getImageSizeFromString($fullImage2);
+    if (empty($size2['mime']) || strpos($size2['mime'], 'image/') !== 0) {
+        die('Base64 value is not a valid image');
+    }
+    $ext = substr($size['mime'], 6);
+    $img_file2 = "C:/xampp/htdocs/twitter-apis/images/banner/banner_{$response3[0]["id"]}.{$ext}";
+    file_put_contents($img_file2, $fullImage2);
+    //updating data of user by adding both banner image url to database
+    $queryText4 = "UPDATE users set  banner_image =? where email = ?";
+    $query4 = $mysqli->prepare($queryText4);
+    $query4->bind_param("ss",  $img_file2, $email);
+    $query4->execute();
+    $response4["success"] = true;
+    echo json_encode($response4);
 }
-$ext = substr($size['mime'], 6);
-$img_file2 = "C:/xampp/htdocs/twitter-apis/images/banner/banner_{$response3[0]["id"]}.{$ext}";
-file_put_contents($img_file2, $fullImage2);
 //end logic4
-
-//updating data of user by adding both banner and profile images urls to database
-$queryText4 = "UPDATE users set profile_image =?, banner_image =? where email = ?";
-$query4 = $mysqli->prepare($queryText4);
-$query4->bind_param("sss", $img_file, $img_file2, $email);
-$query4->execute();
-$response4["success"] = true;
-echo json_encode($response4);
