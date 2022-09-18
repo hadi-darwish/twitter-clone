@@ -37,22 +37,39 @@
            </div>
            <div class="bg-color-profile">
            </div>
-           <div class="grid ">
-                <div class="flex-align flex-center img-padding img-profile-main">
-                    <img src="./Images/person-logo.png" alt="user" class="user-img" />
+           <div class="flex flex-row flex-space border-blocks">
+                <div class="grid gap">
+                    <div class="flex-align flex-center img-padding img-profile-main">
+                        <img src="./Images/person-logo.png" alt="user" class="user-img big-user-profile" />
+                    </div>
+                    <p class="username-pg" id="username-profile-header">Username</p>
+                    <div class="flex flex-row flex-align ">
+                        <i class=" material-icons side-bar-icons calender">calendar_month</i>
+                        <p> Joined September 2022 </p>
+                    </div>
+                    <div class="flex flex-row">
+                        <p> 0 Following </p>
+                        <p class="followers-padding"> 0 Followers </p>
+                    </div>
                 </div>
-                <p class="username-pg" id="username-profile-header">Username</p>
-                <div class-="flex flex-row">
-                    <i class=" material-icons side-bar-icons">calendar_month</i>
-                    <p> Joined September 2022 </p>
-                </div>
-                <div class="flex flex-row">
-                    <p> 0 Following </p>
-                    <p> 0 Followers </p>
-                </div>
+            <button type="button" class="edit-profile-btn click-me click-edit-btn" id="edit_profile">Edit Profile</button>
            </div>
-          
-        </div>
+         </div>
+         <div class="popup popup-edit-profile" id="popup">
+            <div class="flex">
+                <div>
+                    <img
+                    src="./Images/close.png"
+                    class="close-icon"
+                    id="closePop"
+                    alt="icon"
+                    />
+                    <h1>Edit Profile</h1>
+                </div>
+                <button type="button" class="save-btn">Save</button>
+            </div>
+         </div>
+      
 
 
         <div class="block-container">
@@ -69,10 +86,10 @@
  
 
 
-    </div>
+   
 
 
 
-    
+        <script src="javascript/profile.js"></script>
 </body>
 </html>

@@ -34,10 +34,17 @@
     justify-content: space-around;
 }
 
+.followers-padding{
+  padding-left:14px;
+}
 
 .grid {
   display: grid;
   gap: 45px;
+}
+
+.gap{
+  gap:3px;
 }
 
 .grid-row{
@@ -176,6 +183,20 @@ a{
   color: #0a5878;
 }
 
+
+.click-edit-btn:hover{
+   background-color: rgb(207,217,222);
+}
+
+
+.save-btn{
+  color:white;
+  background-color: black;
+  width:30px;
+  height:30px;
+  border-radius:70px;
+  border-style: none;
+}
 /* Sign up page */
 
 .popup {
@@ -466,9 +487,25 @@ a{
   height:200px;
 }
 
-.img-profile-main{
-  
-  z-index:-1;
+.big-user-profile{
+  top:-20%;
+}
+
+.edit-profile-btn{
+   margin-top:20px;
+   margin-right:37px;
+   background:none;
+   border-radius:50px;
+   border:2px solid #d1cece;
+   width:100px;
+   height:40px;
+
+}
+
+.popup-edit-profile{
+    background-color:rgb(163, 150, 150);
+    width:500px;
+    height:560px;
 }
 
 /* Media Query */
