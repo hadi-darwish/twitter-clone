@@ -29,3 +29,10 @@ while ($c = $array->fetch_assoc()) {
         unlink($c["image_url"]);
     }
 }
+//deleting images url from database if existed
+$queryText2 = "DELETE FROM images where tweets_id=?";
+$query2 = $mysqli->prepare($queryText2);
+$query2->bind_param("s", $tweet_id);
+$query2->execute();
+$response2["success"] = true;
+echo json_encode($response2);
