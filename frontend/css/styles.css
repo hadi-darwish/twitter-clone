@@ -568,5 +568,10 @@ a{
     width: 100%;
   }
 
+  .border-blocks{
+    width:100%;
+    padding:1rem;
+  }
+
   .
 }

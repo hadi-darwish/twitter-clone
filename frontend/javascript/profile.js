@@ -1,11 +1,9 @@
 const popup = document.getElementById("popup");
 const close = document.getElementById("closePop");
-const edit_profile = document.getElementById("edit_profile");
 
 
 edit_profile.addEventListener("click", openPopup)
 function openPopup(){
-    console.log("hi")
     popup.classList.add("open-popup");
 }
 
