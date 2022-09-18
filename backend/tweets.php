@@ -37,6 +37,7 @@ $tweet_id = ($response[0]["MAX( id )"]);
 //adding images of tweet to database
 foreach ($tweet_images[0] as $a) {
     if ($a != "") {
+        //converting images from base64 to normal 
         $fullImage = base64_decode($a);
         $size = getImageSizeFromString($fullImage);
         if (empty($size['mime']) || strpos($size['mime'], 'image/') !== 0) {
@@ -45,8 +46,9 @@ foreach ($tweet_images[0] as $a) {
         $ext = substr($size['mime'], 6);
         $img_file = "C:/xampp/htdocs/twitter-apis/images/tweets/tweet_{$tweet_id}_{$counter}.{$ext}";
         file_put_contents($img_file, $fullImage);
+        //incrementing counter to index the images according to tweet id
         $counter++;
-
+        //adding images to database and saving to server
         $queryText2 = "INSERT  INTO images (image_url , tweets_id) VALUE (?,?)";
         $query2 = $mysqli->prepare($queryText2);
         $query2->bind_param("ss", $img_file, $tweet_id);
