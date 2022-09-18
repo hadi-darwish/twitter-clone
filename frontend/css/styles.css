@@ -44,6 +44,7 @@
     grid-template-rows: auto auto;
 }
 
+
 input {
   border-color: rgba(215, 215, 205);
   background: transparent;
@@ -111,13 +112,6 @@ a{
 
 
 /* Button */
-/* 
-.btn-twt{
-    font-size: 30px;
-    padding: 10px;
-    margin: 17px;
-    width: 200px;
-} */
 
 .btn {
   background-color: rgb(29, 155, 240);
@@ -264,7 +258,7 @@ a{
 }
 
 .progress-bar::before{
-  content: "";
+  content:"";
   position:absolute;
   top:50%;
   transform:translateY(-50%);
@@ -294,8 +288,6 @@ a{
 .progress{
   color:black;
 }
-
-
 
 .progress-step-active{
   color:white;
@@ -459,7 +451,8 @@ a{
 }
 
 .username-main-padding{
-    padding-top:40px;
+    padding-top:6px;
+   
 }
 
 .arrow-btn{
@@ -469,11 +462,14 @@ a{
 }
 
 .bg-color-profile{
-  background-color: rgba(125, 117, 117, 0.69);
-  position: absolute;
-  display: none;
+  background-color: rgb(207,217,222);
+  height:200px;
 }
 
+.img-profile-main{
+  
+  z-index:-1;
+}
 
 /* Media Query */
 
