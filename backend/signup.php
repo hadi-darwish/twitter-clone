@@ -101,7 +101,7 @@ if ($prof_image != "") {
         die('Base64 value is not a valid image');
     }
     $ext = substr($size['mime'], 6);
-    $img_file = "C:/xampp/htdocs/twitter-apis/images/profile/prof_{$response3[0]["id"]}.{$ext}";
+    $img_file = "images/profile/prof_{$response3[0]["id"]}.{$ext}";
     file_put_contents($img_file, $fullImage);
     //updating data of user by adding both profile image url to database
     $queryText5 = "UPDATE users set  profile_image =? where email = ?";
@@ -123,7 +123,7 @@ if ($banner_image != "") {
         die('Base64 value is not a valid image');
     }
     $ext = substr($size['mime'], 6);
-    $img_file2 = "C:/xampp/htdocs/twitter-apis/images/banner/banner_{$response3[0]["id"]}.{$ext}";
+    $img_file2 = "images/banner/banner_{$response3[0]["id"]}.{$ext}";
     file_put_contents($img_file2, $fullImage2);
     //updating data of user by adding both banner image url to database
     $queryText4 = "UPDATE users set  banner_image =? where email = ?";

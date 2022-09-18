@@ -44,7 +44,7 @@ foreach ($tweet_images[0] as $a) {
             die('Base64 value is not a valid image');
         }
         $ext = substr($size['mime'], 6);
-        $img_file = "C:/xampp/htdocs/twitter-apis/images/tweets/tweet_{$tweet_id}_{$counter}.{$ext}";
+        $img_file = "images/tweets/tweet_{$tweet_id}_{$counter}.{$ext}";
         file_put_contents($img_file, $fullImage);
         //incrementing counter to index the images according to tweet id
         $counter++;
