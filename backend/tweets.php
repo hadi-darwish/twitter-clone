@@ -33,3 +33,25 @@ while ($c = $array->fetch_assoc()) {
     $response[] = $c;
 }
 $tweet_id = ($response[0]["MAX( id )"]);
+
+//adding images of tweet to database
+foreach ($tweet_images[0] as $a) {
+    if ($a != "") {
+        $fullImage = base64_decode($a);
+        $size = getImageSizeFromString($fullImage);
+        if (empty($size['mime']) || strpos($size['mime'], 'image/') !== 0) {
+            die('Base64 value is not a valid image');
+        }
+        $ext = substr($size['mime'], 6);
+        $img_file = "C:/xampp/htdocs/twitter-apis/images/tweets/tweet_{$tweet_id}_{$counter}.{$ext}";
+        file_put_contents($img_file, $fullImage);
+        $counter++;
+
+        $queryText2 = "INSERT  INTO images (image_url , tweets_id) VALUE (?,?)";
+        $query2 = $mysqli->prepare($queryText2);
+        $query2->bind_param("ss", $img_file, $tweet_id);
+        $query2->execute();
+        $response2["success"] = true;
+        echo json_encode($response2);
+    }
+}
