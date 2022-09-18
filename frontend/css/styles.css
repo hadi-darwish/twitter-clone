@@ -310,50 +310,6 @@ a{
   align-self: center;
 }
 
-/* Progress bar */
-.progress-bar{
-  position: relative;
-  display:flex;
-  justify-content: space-around;
-  counter-reset: step;;
-}
-
-.progress-bar::before{
-  content:"";
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  height:4px;
-  width:100%;
-  background-color: #dcdcdc;
-  z-index:-1;
-}
-
-.progress-step {
-  width:2rem;
-  height:2rem;
-  background-color: #dcdcdc;
-  border-radius:50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.progress-step::before , .progress{
-  counter-increment: step;
-  content:counter(step);
-}
-
-
-.progress{
-  color:black;
-}
-
-.progress-step-active{
-  color:white;
-
-}
 
 /* Home page */
 
@@ -611,4 +567,6 @@ a{
   .input-signup {
     width: 100%;
   }
+
+  .
 }
