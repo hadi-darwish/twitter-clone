@@ -26,19 +26,30 @@
       <img src="./Images/Twitter-logo.svg" class="small-logo" alt="logo" />
       <h1 class="header header-login">Happening now</h1>
       <p class="parag">Join Twitter today.</p>
-      <div class="log-in flex flex-column ">
+      <form class="log-in flex flex-column">
+        <h3 class="hidden" id="error-messages"></h3>
         <label>Email Address </label>
-        <input class="input-login" type="text" />
+        <input
+          name="email"
+          class="input-login"
+          type="email"
+          id="email-login"
+          required
+        />
         <label>Password </label>
-        <input class="input-login" type="text" />
-        <button type="button" class="btn ">
-        <a href="feed.html">Log in</a>
-        </button>
+        <input
+          name="password"
+          class="input-login"
+          type="password"
+          id="password-login"
+          required
+        />
+        <button type="submit" class="btn" id="login">Log in</button>
         <h2 class="btn-header">Don't have an account?</h2>
         <button type="button" class="btn btn-white click-me" id="signup">
-        Sign Up
+          Sign Up
         </button>
-      </div>
+      </form>
     </div>
     <div class="popup" id="popup">
       <!-- start of sign up page  -->
@@ -49,12 +60,6 @@
         alt="icon"
       />
       <div class="sign-up">
-        <!-- progress bar -->
-        <div class="progress-bar">
-            <div class="progress" id="progress"></div>
-            <div class="progress-step progress-step-active"></div>
-            <div class="progress-step"></div>
-        </div>
         <div class="flex flex-column">
           <div class="flex signup-head">
             <img
@@ -93,7 +98,7 @@
           </p>
           <input type="date" class="input-signup date" name="date" id="date" />
         </div>
-        <button class="btn btn-white click-me" id="btn">sign up</button>
+        <button class="btn btn-white click-me" id="next-btn">Next</button>
       </div>
       <!-- End of signup page -->
     </div>

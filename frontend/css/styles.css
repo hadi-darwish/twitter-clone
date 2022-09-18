@@ -5,6 +5,84 @@
   box-sizing: border-box;
 }
 
+/* start hadi */
+
+#result {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.thumbnail {
+  height: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+.tweet {
+  border: solid 1px rgb(32, 82, 158);
+}
+.tweets {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.tweets div {
+  border: solid 1px black;
+}
+.tweets > section {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* background-color: red; */
+  border: solid 1px rgb(32, 82, 158);
+  margin: 15px 0;
+}
+section > p {
+  margin: 20px 50px;
+}
+.tweets img {
+  height: 100%;
+  width: 33.33%;
+  padding: 15px;
+  border: solid 1px rgb(183, 188, 192);
+}
+
+.profile {
+  display: flex;
+  align-items: flex-end;
+  padding: 15px;
+}
+.profile img {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+.profile h3 {
+  margin-right: 5px;
+}
+
+.tweets button {
+  margin-left: 100px;
+  height: 25px;
+  width: 100px;
+  background-color: rgb(29, 155, 240);
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  color: white;
+  font-weight: 700;
+  border: 0 solid black;
+  border-radius: 30px;
+  align-self: center;
+}
+/* End hadi */
+
 /*Utilities */
 .fullwidth {
   width: 100%;
@@ -18,7 +96,7 @@
   padding: 5rem;
 }
 
-.js-items-center{
+.js-items-center {
   justify-items: center;
 }
 
@@ -46,12 +124,12 @@
   justify-content: space-between;
 }
 
-.flex-around{
-    justify-content: space-around;
+.flex-around {
+  justify-content: space-around;
 }
 
-.followers-padding{
-  padding-left:14px;
+.followers-padding {
+  padding-left: 14px;
 }
 
 .grid {
@@ -59,22 +137,21 @@
   gap: 45px;
 }
 
-.grid-column{
-  grid-template-columns: auto auto auto ;
+.grid-column {
+  grid-template-columns: auto auto auto;
 }
 
-.grid-profile-row{
+.grid-profile-row {
   grid-template-rows: auto;
 }
 
-.gap{
-  gap:15px;
+.gap {
+  gap: 15px;
 }
 
-.grid-row{
-    grid-template-rows: auto auto;
+.grid-row {
+  grid-template-rows: auto auto;
 }
-
 
 input {
   border-color: rgba(215, 215, 205);
@@ -87,20 +164,19 @@ input {
   background-color: blue;
 }
 
-
-a{
-    text-decoration: none;
-    color: white;
+a {
+  text-decoration: none;
+  color: white;
 }
-  
+
 /* first page images*/
 
 .input-login {
   border-radius: 18px;
-  height:45px;
-  width:80%;
-  padding-left:14px;
-  font-size:20px;
+  height: 45px;
+  width: 80%;
+  padding-left: 14px;
+  font-size: 20px;
 }
 
 .images {
@@ -140,13 +216,12 @@ a{
     BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-
-
 /* Button */
 
 .btn {
   background-color: rgb(29, 155, 240);
-  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
   color: white;
   font-weight: 700;
   border: 0 solid black;
@@ -161,19 +236,17 @@ a{
   text-align: center;
 }
 
-
 .btn-header {
-    align-self: center;
-}
-  
-.btn-white {
-    background-color: white;
-    text-align: center;
-    color: rgb(29, 155, 240);
-    border-color: rgba(215, 215, 205);
-    border: 1px solid;
+  align-self: center;
 }
 
+.btn-white {
+  background-color: white;
+  text-align: center;
+  color: rgb(29, 155, 240);
+  border-color: rgba(215, 215, 205);
+  border: 1px solid;
+}
 
 /* log in  */
 
@@ -207,21 +280,20 @@ a{
   color: #0a5878;
 }
 
-
-.click-edit-btn:hover{
-   background-color: rgb(207,217,222);
+.click-edit-btn:hover {
+  background-color: rgb(207, 217, 222);
 }
 
 .center-items {
   align-items: center;
 }
 
-.save-btn{
-  color:white;
+.save-btn {
+  color: white;
   background-color: black;
-  width:80px;
-  height:30px;
-  border-radius:40px;
+  width: 80px;
+  height: 30px;
+  border-radius: 40px;
   border-style: none;
   float: right;
 }
@@ -240,7 +312,6 @@ a{
   display: flex;
   justify-content: center;
   box-shadow: 20px 20px 50px 15px grey;
-
 }
 
 .open-popup {
@@ -266,12 +337,11 @@ a{
   margin-top: 1rem !important;
 }
 
-.arrow-icon{
-  color:black;
-  padding-left:14px;
-  padding-right:14px;
+.arrow-icon {
+  color: black;
+  padding-left: 14px;
+  padding-right: 14px;
 }
-
 
 .sign-up {
   padding: 0 5rem;
@@ -283,7 +353,7 @@ a{
   justify-content: space-between;
 }
 
-.mt-1{
+.mt-1 {
   margin-top: 1rem;
 }
 .close-icon {
@@ -310,22 +380,20 @@ a{
   align-self: center;
 }
 
-
 /* Home page */
 
 .block {
   display: grid;
-  grid-template-columns: 300px 900px 300px; 
+  grid-template-columns: 300px 900px 300px;
   margin: 0 auto;
 }
 
-.block-left-sidebar{
-    padding-left:60px;
+.block-left-sidebar {
+  padding-left: 60px;
 }
 
-
-.text{
-   font-size:20px;
+.text {
+  font-size: 20px;
 }
 
 .block-container {
@@ -337,42 +405,39 @@ a{
 }
 
 .block-main {
-  padding:77px;
-  padding-top: 0 ;
+  padding: 77px;
+  padding-top: 0;
 }
 
-
-.border-blocks{
-    border-right: 2px solid #e7e7e7;
-    border-left:2px solid #e7e7e7 ;
-    border-bottom:2px solid #e7e7e7 ;
+.border-blocks {
+  border-right: 2px solid #e7e7e7;
+  border-left: 2px solid #e7e7e7;
+  border-bottom: 2px solid #e7e7e7;
 }
 
-
-.user-img{
-    height:45px;
-    width:45px;
-    border-radius: 100%;
+.user-img {
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
 }
 
-.image-upload>input{
+.image-upload > input {
   display: none;
 }
 
-.text-h1{
-  color:black;
+.text-h1 {
+  color: black;
   font-size: 20px;
 }
 
-.textarea{
-    font-size:20px;
-    width:80%;
-    align-self:center;
-    border-style: none;
-    resize: none;
-    height:50px;
+.textarea {
+  font-size: 20px;
+  width: 80%;
+  align-self: center;
+  border-style: none;
+  resize: none;
+  height: 50px;
 }
-
 
 .logo-center {
   justify-self: center;
@@ -381,178 +446,169 @@ a{
 .font-home {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
 }
 
-.img-padding{
-    padding-left:20px;
-    padding-right: 20px;
+.img-padding {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-
-.home-icon-bar{
-    margin-bottom: 20px;
-    padding-top:20px;
+.home-icon-bar {
+  margin-bottom: 20px;
+  padding-top: 20px;
 }
-
 
 .Home-header {
   font-size: 20px;
   font-weight: 700;
-  padding-left:20px;
+  padding-left: 20px;
 }
 
-.tweet-bar{
-    justify-content:space-between;
+.tweet-bar {
+  justify-content: space-between;
 }
 
-.tweet-btn-homebar{
-  margin-bottom:20px;
+.tweet-btn-homebar {
+  margin-bottom: 20px;
 }
 
 /* Icons */
 
 .side-bar-icons {
-  font-size:30px;
-  margin:9px;
+  font-size: 30px;
+  margin: 9px;
 }
 
 .side-bar-items:hover {
-    cursor: pointer;
-    background-color:rgb(183, 188, 192);
-    color: black;
-    padding-right:20px;
-    border-radius:60px;
+  cursor: pointer;
+  background-color: rgb(183, 188, 192);
+  color: black;
+  padding-right: 20px;
+  border-radius: 60px;
 }
 
-.icon-padding{
-    padding-left:30px;
+.icon-padding {
+  padding-left: 30px;
 }
 
-.calender{
-  margin:0;
-  padding-right:8px;
+.calender {
+  margin: 0;
+  padding-right: 8px;
 }
 
-.center-icon{
-  position:relative;
-  text-align:center;
+.center-icon {
+  position: relative;
+  text-align: center;
 }
 
 /* Third and last block */
 
-.search-bar{
-    background-color:rgb(239, 243, 244);
-    border-radius: 60px;
-    padding: 5px;
-    margin-right:10px;
+.search-bar {
+  background-color: rgb(239, 243, 244);
+  border-radius: 60px;
+  padding: 5px;
+  margin-right: 10px;
 }
 
-.search-btn{
-    border-style:none;
-    background:none;
+.search-btn {
+  border-style: none;
+  background: none;
 }
 
-.search-input{
-    border-style: none;
-    font-size:14px;
+.search-input {
+  border-style: none;
+  font-size: 14px;
 }
 
-.block-right-sidebar{
-    margin-right:60px;
+.block-right-sidebar {
+  margin-right: 60px;
 }
-
 
 /* Profile page */
-.username-pg{
-    font-size:20px;
-    font-family: inherit;
-    font-weight: 700;
+.username-pg {
+  font-size: 20px;
+  font-family: inherit;
+  font-weight: 700;
 }
 
-.username-main-padding{
-    padding-top:6px;
-   
+.username-main-padding {
+  padding-top: 6px;
 }
 
-.arrow-btn{
-    border-style: none;
-    background: none;
-    padding-right:40px;
+.arrow-btn {
+  border-style: none;
+  background: none;
+  padding-right: 40px;
 }
 
-.bg-color-profile{
-  background-color: rgb(207,217,222);
-  height:200px;
+.bg-color-profile {
+  background-color: rgb(207, 217, 222);
+  height: 200px;
 }
 
-.container{
+.container {
   width: 100%;
   display: flex;
 }
 
-.user-profile{
+.user-profile {
   top: -50%;
-  width:5rem;
-  height:5rem;
+  width: 5rem;
+  height: 5rem;
   position: relative;
 }
 
-.bg-color{
-  background-color: rgb(207,217,222);
+.bg-color {
+  background-color: rgb(207, 217, 222);
 }
 
-.height-bg{
-  height:50%;
+.height-bg {
+  height: 50%;
 }
 
-.gap-content{
-  gap:5px;
+.gap-content {
+  gap: 5px;
 }
 
-.bio{
-  top:-30%;
+.bio {
+  top: -30%;
   position: relative;
 }
 
-.big-user-profile{
-  width:150px;
-  height:160px;
+.big-user-profile {
+  width: 150px;
+  height: 160px;
 }
 
-.padding-blocks{
-   padding-left:20px;
+.padding-blocks {
+  padding-left: 20px;
 }
 
-
-.edit-profile-btn{
-   margin-top:20px;
-   margin-right:37px;
-   background:none;
-   border-radius:50px;
-   border:2px solid #d1cece;
-   width:100px;
-   height:40px;
-
-}
-
-.popup-edit-profile{
-    background-color:white;
-    width:500px;
-    height:560px;
-    padding-top: 1rem;
-    
-}
-
-.camera-btn{
-  border-radius:50px;
+.edit-profile-btn {
+  margin-top: 20px;
+  margin-right: 37px;
   background: none;
-  color:black;
-
+  border-radius: 50px;
+  border: 2px solid #d1cece;
+  width: 100px;
+  height: 40px;
 }
 
-.padding-bg{
-  padding:0px;
+.popup-edit-profile {
+  background-color: white;
+  width: 500px;
+  height: 560px;
+  padding-top: 1rem;
+}
+
+.camera-btn {
+  border-radius: 50px;
+  background: none;
+  color: black;
+}
+
+.padding-bg {
+  padding: 0px;
 }
 /* Media Query */
 
@@ -568,10 +624,8 @@ a{
     width: 100%;
   }
 
-  .border-blocks{
-    width:100%;
-    padding:1rem;
+  .border-blocks {
+    width: 100%;
+    padding: 1rem;
   }
-
-  .
 }

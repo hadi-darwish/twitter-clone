@@ -24,35 +24,46 @@
           />
           <div class="flex flex-row flex-center flex-align side-bar-items">
             <i class="material-icons side-bar-icons">home</i>
-            <a href="feed.html" ><h1 class="text-h1">Home</h1></a>
+            <h1 class="text">Home</h1>
           </div>
           <div class="flex flex-row flex-center flex-align side-bar-items">
             <i class="material-icons side-bar-icons">person</i>
-            <a href="profile.html"><h1 class="text-h1">Profile</h1></a>
+            <h1 class="text">Profile</h1>
           </div>
-          <button type="button" class="btn tweet-btn-sidebar">Tweet</button>
+          <button type="button" id="send" class="btn tweet-btn-sidebar">
+            Tweet
+          </button>
         </div>
       </div>
       <!-- Main middle block -->
       <div class="block-main">
         <!-- Home header first block -->
-        <section class="flex flex-column flex-space border-blocks">
+        <section class="flex flex-column flex-space tweet-head">
           <div class="flex flex-row flex-space home-icon-bar">
             <h1 class="Home-header">Home</h1>
             <i class="material-icons icon-padding">flutter_dash</i>
           </div>
           <div class="flex flex-row">
             <div class="flex-align flex-center img-padding">
-              <a href="profile.html"> <img src="./Images/person-logo.png" alt="user" class="user-img" /></a>
+              <img src="./Images/person-logo.png" alt="user" class="user-img" />
             </div>
             <div class="flex-column">
               <textarea
                 rows="4"
                 cols="50"
                 placeholder="What's happening?"
+                required
                 class="textarea"
+                id="tweet_text"
               ></textarea>
               <div class="flex flex-align flex-center tweet-bar">
+                <input
+                  id="files"
+                  type="file"
+                  multiple="multiple"
+                  accept="image/jpeg, image/png, image/jpg"
+                />
+                <output id="result"></output>
                 <i class="material-icons home-img-icon"> image </i>
                 <button type="button" class="btn tweet-btn-homebar">
                   Tweet
@@ -61,6 +72,9 @@
             </div>
           </div>
         </section>
+        <!-- Start tweets Section -->
+        <section class="flex flex-column tweets" id="tweets"></section>
+        <!-- end tweets Section -->
       </div>
       <!-- Right sidebar block -->
       <div class="block-container">
@@ -78,5 +92,6 @@
         </div>
       </div>
     </div>
+    <script src="./javascript/feed.js"></script>
   </body>
 </html>
